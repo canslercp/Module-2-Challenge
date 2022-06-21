@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corbin Cansler's Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!-- Main header bar code -------------------------------------------------------------->
+
+<body>
+    <header>
+        <h1>CORBIN CANSLER</h1>
+        <div class="menu">
+            <button class="dropbtn"><i class="fa fa-bars"></i></button>
+            <ul class="dropdown-content">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#resume">RESUME</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- The section below includes code fo the ABOUT me portion of my portfolio ----------->
+    <section id="about">
+        <h2>ABOUT</h2>
+        <div>
+            <img id=me src="./assets/images/Me.jpg" alt="A picture of Corbin Cansler">
+            <p class="bio">
+                Hello! I am full stack web developer in training based out of Raleigh, North Carolina.
+                I currently have coding experience in both html and CSS and I am in the process of learning
+                much, much more! My interests include playing music, outdoor adventure, coffee, fitness, cooking,
+                and working on house projects. Check out my latest web development projects below and don't hesitate
+                to reach out! :)
+            </p>
+        </div>
+    </section>
+
+    <!-- This section includes code for my web projects ------------------------------------>
+    <section class="workMain" id="work">
+        <h2>WORK</h2>
+        <main>
+            <section class="workHero">
+                <a href="www.CorbinsAdventurePage.com">
+                    <img src="./assets/images/snow-gbb886b9d5_1920.jpg" alt="Glacier covered mountain">
+                    <footer>Adventure Webpage</footer>
+                </a>
+            </section>
+            <section class="workSection">
+                <a href="www.CorbinsMusicPage.com">
+                    <img src="./assets/images/pedalboard-ga8142fae9_1920.jpg" alt="Guitar pedal board">
+                    <footer>Music Webpage</footer>
+                </a>
+            </section>
+            <section class="workSection">
+                <a href="'www.CorbinsCoffeePage.com">
+                    <img src="./assets/images/coffee-g099fe91bf_1920.jpg" alt="Coffee shop flat white and pastry">
+                    <footer>Coffee Webpage</footer>
+                </a>
+            </section>
+        </main>
+    </section>
+
+
+    <!-- this sections includes code for contact ------------------------------------------->
+    <section id="contact">
+
+        <h2>COTACT</h2>
+        <div>
+            <form>
+                <p>
+                    <label for="username">Name:</label>
+                    <input class="text-input" id="username" type="text" placeholder="First Last" />
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input class="text-input" id="email" type="text" placeholder="username@example.com" />
+                </p>
+                <p class="flex-row">
+                    <label for="industry">Industry role:</label>
+                    <select id="industry">
+                        <option>Hiring Manager</option>
+                        <option selected>Recruiter</option>
+                        <option>Web Developer</option>
+                        <option>Other</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="comment">Message:</label>
+                    <textarea class="text-input" id="comment" placeholder="Leave your message here"></textarea>
+                </p>
+                <p>
+                    <button>Submit</button>
+                </p>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- This section contains my resume ------------------------------------------------>
+    <section id="resume">
+        <h2>RESUME</h2>
+        <div>
+            <iframe src="./assets/PDF/Corbin_Cansler_Resume (3).pdf" width="100%" height="500px">
+            </iframe>
+        </div>
+    </section>
+
+</body>

@@ -1,0 +1,266 @@
+/*CSS for entire page*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #a5bfd6;
+  font-family: sans-serif;
+
+}
+
+p {
+  font-size: 16px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+/* css for the main header bar -----------------------------------------*/
+header {
+  position: fixed;
+  top: 0;
+  padding: 0px;
+  background-color: #2b73b2;
+  color: #ffffff;
+  width: 100%;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 100;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin-right: 20px;
+  display: flex;
+  justify-content: end;
+}
+
+button {
+  display: none
+}
+
+li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+a:hover,
+a:focus {
+  background-color: #184c6f;
+}
+
+/* Tablet size - header changes - menu button appears*/
+@media screen and (max-width: 1100px) {
+  header {
+    display: flex;
+  }
+
+  button {
+    display: inline;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: end;
+  }
+
+  .dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 50%;
+    font-size: 150%;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: #2980B9;
+  }
+
+  .dropdown-content {
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    display: none;
+  }
+
+  .menu:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd
+  }
+}
+
+/* Phones - header changes - menu icon changes */
+@media screen and (max-width: 750px) {
+  h1 {
+    font-size: 150%;
+  }
+
+  .dropbtn {
+    padding: 20%;
+    font-size: 100%;
+  }
+}
+
+/* css for ABOUT ------------------------------------------------------ */
+#me {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 5%;
+  shape-outside: circle();
+}
+
+.bio {
+  text-align: justify;
+  margin-right: 5%;
+}
+
+
+/* css for WORK section----------------------------------------------- */
+h2 {
+  margin-top: 6%;
+  width: 100%;
+  color: #262627;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.workHero img {
+  height: auto;
+  width: 100%;
+}
+
+.workSection {
+  flex: 1 0 0;
+}
+
+.workSection img {
+  width: 100%;
+  min-width: 400px;
+}
+
+.workHero footer {
+  background-color: black;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  padding: 2%;
+}
+
+.workSection footer {
+  background-color: black;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  padding: 2%;
+
+}
+
+/* CSS for Contact Form ------------------------------------------------- */
+form {
+  max-width: 100%;
+}
+
+form p {
+  margin: 3% 0;
+}
+
+label {
+  display: block;
+}
+
+button {
+  padding: 1% 2%;
+  color: #fff;
+  background-color: #1c2f5b;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../images/arrow.jpeg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.text-input {
+  width: 100%;
+  max-width: 100%;
+}
+
+.text-input,
+select {
+  padding: 1%;
+  outline: none;
+  border: 1.2px solid #a2bff7;
+}
+
+.text-input:hover,
+.checkbox:hover,
+select:hover,
+button:hover {
+  box-shadow: 0 0 5px #999;
+}
+
+.text-input:focus {
+  border-right-width: 5px;
+}
+
+.text-input:placeholder-shown {
+  border-style: solid;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.flex-row select {
+  flex: 1 0 0;
+  margin-left: 2%;
+}
+
+.flex-row input {
+  margin-right: 2%;
+}
+
+/* End of comment CSS */
